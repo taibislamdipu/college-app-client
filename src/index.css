@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.testb {
+  @apply border border-red-400;
+}
+
+.testc {
+  @apply bg-red-400;
+}
+
+.wrapper {
+  @apply container mx-auto space-y-28 px-4 lg:px-0;
+}
