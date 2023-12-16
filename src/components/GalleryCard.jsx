@@ -3,7 +3,7 @@ const GalleryCard = () => {
     <div>
       <img
         className="object-contain"
-        src="https://picsum.photos/500/300"
+        src="https://picsum.photos/500/400"
         alt="picture"
       />
     </div>

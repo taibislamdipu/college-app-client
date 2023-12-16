@@ -80,3 +80,54 @@ export const collegeData = [
     slug: "princeton-university",
   },
 ];
+
+export const researchData = [
+  {
+    id: 1,
+    title: "Quantum Computing's Impact on Cybersecurity",
+    description:
+      "Exploring quantum computing's role in revolutionizing cybersecurity strategies and encryption methods.",
+  },
+  {
+    id: 2,
+    title: "AI in Healthcare: Improving Diagnosis Accuracy",
+    description:
+      "Analyzing AI's potential to enhance diagnostic precision and patient care in healthcare systems.",
+  },
+  {
+    id: 3,
+    title: "Renewable Energy Integration in Smart Grids",
+    description:
+      "Investigating strategies for the seamless integration of renewable energy sources within smart grid frameworks.",
+  },
+  {
+    id: 4,
+    title: "Ethical Implications of Biotechnology Advancements",
+    description:
+      "Examining ethical considerations concerning the rapid advancements in biotechnology and genetic engineering.",
+  },
+  {
+    id: 5,
+    title: "Neural Networks for Predictive Financial Modeling",
+    description:
+      "Utilizing neural networks to create accurate predictive models for financial market trends and behaviors.",
+  },
+  {
+    id: 6,
+    title: "Climate Change Mitigation Strategies in Urban Planning",
+    description:
+      "Assessing sustainable urban planning strategies to combat the effects of climate change in metropolitan areas.",
+  },
+  {
+    id: 7,
+    title: "Impact of Social Media on Mental Health",
+    description:
+      "Evaluating the effects of extensive social media usage on mental health and well-being among users.",
+  },
+  {
+    id: 8,
+    title: "Blockchain's Potential in Supply Chain Transparency",
+    description:
+      "Exploring blockchain technology to enhance transparency and traceability in global supply chains.",
+  },
+];

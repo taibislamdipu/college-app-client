@@ -38,7 +38,7 @@ const CollegeCard = (props) => {
 
       <div className="pb-3 w-min whitespace-nowrap">
         <Link to={`/college/${slug}`}>
-          <Button btnText={"See Details"} />
+          <Button btnText={"Know More"} />
         </Link>
       </div>
     </div>
