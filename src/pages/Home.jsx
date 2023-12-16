@@ -6,6 +6,7 @@ import Title from "../components/Title";
 import ResearchCard from "../components/ResearchCard";
 import Footer from "../components/Footer";
 import { IoIosSearch } from "react-icons/io";
+import Button from "../components/Button";
 
 const Home = () => {
   return (
@@ -19,14 +20,18 @@ const Home = () => {
       </div>
 
       <div className=" space-lg wrapper">
-        <Title title={"College Card"} />
+        <Title title={"Top Colleges"} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10">
+        <div className="max-w-3xl space-md mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 lg:gap-10">
           {collegeData.map((data) => (
             <div className="col-span-1" key={data.id}>
               <CollegeCard data={data} />
             </div>
           ))}
+        </div>
+
+        <div className="w-min whitespace-nowrap mx-auto py-6">
+          <Button btnText={"Show More College"} />
         </div>
       </div>
 

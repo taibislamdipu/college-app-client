@@ -1,17 +1,18 @@
 export const collegeData = [
   {
     id: 1,
-    imgUrl: "https://picsum.photos/300/150",
+    imgUrl: "https://picsum.photos/280/300",
     name: "BRAC University",
     admissionDate: "15/12/2023",
     events: "hackathons.",
     research: "3 Paper",
     sports: "Lorem, ipsum.",
     slug: "brac-university",
+    address: "San Bernardino, CA",
   },
   {
     id: 2,
-    imgUrl: "https://picsum.photos/300/150",
+    imgUrl: "https://picsum.photos/280/300",
     name: "Harvard University",
     admissionDate: "20/08/2024",
     events: "Conferences, seminars.",
@@ -21,7 +22,7 @@ export const collegeData = [
   },
   {
     id: 3,
-    imgUrl: "https://picsum.photos/300/150",
+    imgUrl: "https://picsum.photos/280/300",
     name: "Stanford University",
     admissionDate: "10/05/2024",
     events: "Workshops, hackathons.",
@@ -31,7 +32,7 @@ export const collegeData = [
   },
   {
     id: 4,
-    imgUrl: "https://picsum.photos/300/150",
+    imgUrl: "https://picsum.photos/280/300",
     name: "Massachusetts Institute of Technology",
     admissionDate: "01/09/2024",
     events: "Tech symposiums, coding competitions.",
@@ -41,7 +42,7 @@ export const collegeData = [
   },
   {
     id: 5,
-    imgUrl: "https://picsum.photos/300/150",
+    imgUrl: "https://picsum.photos/280/300",
     name: "University of Oxford",
     admissionDate: "12/10/2024",
     events: "Debates, literary festivals.",
@@ -51,7 +52,7 @@ export const collegeData = [
   },
   {
     id: 6,
-    imgUrl: "https://picsum.photos/300/150",
+    imgUrl: "https://picsum.photos/280/300",
     name: "Yale University",
     admissionDate: "05/07/2024",
     events: "Art exhibitions, cultural festivals.",
@@ -61,7 +62,7 @@ export const collegeData = [
   },
   {
     id: 7,
-    imgUrl: "https://picsum.photos/300/150",
+    imgUrl: "https://picsum.photos/280/300",
     name: "University of Cambridge",
     admissionDate: "18/03/2024",
     events: "Science fairs, astronomy clubs.",
@@ -71,7 +72,7 @@ export const collegeData = [
   },
   {
     id: 8,
-    imgUrl: "https://picsum.photos/300/150",
+    imgUrl: "https://picsum.photos/280/300",
     name: "Princeton University",
     admissionDate: "30/11/2024",
     events: "Mathematics contests, research forums.",

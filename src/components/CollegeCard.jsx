@@ -1,47 +1,63 @@
 import { Link } from "react-router-dom";
-import Button from "./Button";
+import { FaArrowRight } from "react-icons/fa";
 
 const CollegeCard = (props) => {
-  const { imgUrl, name, admissionDate, events, research, sports, slug } =
-    props.data;
+  const {
+    imgUrl,
+    name,
+    address,
+    admissionDate,
+    events,
+    research,
+    sports,
+    slug,
+  } = props.data;
 
   return (
-    <div className="p-4 border-2 rounded transition flex flex-col gap-4">
-      <div>
-        <img className="object-contain w-full" src={imgUrl} alt="picture" />
-      </div>
+    <>
+      <Link to={`/college/${slug}`} className="group">
+        <div className="lg:grid grid-cols-5 hover:shadow-xl border transition rounded-2xl gap-4 ">
+          <div className="col-span-3 space-md p-6">
+            <div>
+              <h2 className="text-2xl font-semibold group-hover:underline">
+                {name}
 
-      <div>
-        <ul>
-          <li>
-            <span className="font-medium">Name:</span>{" "}
-            <span className="text-secondary">{name}</span>
-          </li>
-          <li>
-            <span className="font-medium">Admission Date:</span>{" "}
-            <span className="text-secondary">{admissionDate}</span>
-          </li>
-          <li>
-            <span className="font-medium">Events:</span>{" "}
-            <span className="text-secondary">{events}</span>
-          </li>
-          <li>
-            <span className="font-medium">Research History:</span>{" "}
-            <span className="text-secondary">{research}</span>
-          </li>
-          <li>
-            <span className="font-medium">Sports:</span>{" "}
-            <span className="text-secondary">{sports}</span>
-          </li>
-        </ul>
-      </div>
-
-      <div className="pb-3 w-min whitespace-nowrap">
-        <Link to={`/college/${slug}`}>
-          <Button btnText={"Know More"} />
-        </Link>
-      </div>
-    </div>
+                <FaArrowRight className="inline ml-2" />
+              </h2>
+              <p>{address}</p>
+            </div>
+            <hr />
+            <div>
+              <ul className="space-y-2">
+                <li>
+                  <span className="font-medium">Admission Date:</span>{" "}
+                  <span className="text-secondary">{admissionDate}</span>
+                </li>
+                <li>
+                  <span className="font-medium">Events:</span>{" "}
+                  <span className="text-secondary">{events}</span>
+                </li>
+                <li>
+                  <span className="font-medium">Research History:</span>{" "}
+                  <span className="text-secondary">{research}</span>
+                </li>
+                <li>
+                  <span className="font-medium">Sports:</span>{" "}
+                  <span className="text-secondary">{sports}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-span-2">
+            <img
+              className="object-cover w-full h-full lg:rounded-tr-2xl  lg:rounded-br-2xl"
+              src={imgUrl}
+              alt="picture"
+            />
+          </div>
+        </div>
+      </Link>
+    </>
   );
 };
 
