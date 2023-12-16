@@ -2,6 +2,7 @@ import GalleryCard from "../components/GalleryCard";
 import Search from "../components/Search";
 import CollegeCard from "../components/CollegeCard";
 import { collegeData } from "../../utils/constants";
+import Title from "../components/Title";
 
 const Home = () => {
   return (
@@ -12,8 +13,8 @@ const Home = () => {
         <h2>College Card</h2>
       </div>
 
-      <div className="testb">
-        <h2>College Card</h2>
+      <div className="testb space-lg">
+        <Title title={"College Card"} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10">
           {collegeData.map((data) => (
@@ -24,8 +25,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="">
-        <h2>Gallery</h2>
+      <div className="space-lg">
+        <Title title={"Gallery"} />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {[1, 2, 3, 4, 5, 6, 7, 8].map((data, index) => (
             <div className="col-span-1 testb mx-auto" key={index}>
