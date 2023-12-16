@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
+import Image from "./Image";
 
 const CollegeCard = (props) => {
   const {
@@ -19,7 +20,7 @@ const CollegeCard = (props) => {
         <div className="lg:grid grid-cols-5 hover:shadow-xl border transition rounded-2xl gap-4 ">
           <div className="col-span-3 space-md p-6">
             <div>
-              <h2 className="text-2xl font-semibold group-hover:underline">
+              <h2 className="text-2xl font-semibold group-hover:underline text-primary">
                 {name}
 
                 <FaArrowRight className="inline ml-2" />
@@ -49,10 +50,9 @@ const CollegeCard = (props) => {
             </div>
           </div>
           <div className="col-span-2">
-            <img
-              className="object-cover w-full h-full lg:rounded-tr-2xl  lg:rounded-br-2xl"
+            <Image
+              className="object-cover w-full h-full lg:rounded-tr-2xl lg:rounded-br-2xl"
               src={imgUrl}
-              alt="picture"
             />
           </div>
         </div>

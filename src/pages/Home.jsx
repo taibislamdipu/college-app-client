@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className="space-div">
       <div className="wrapper">
-        <h2 className="text-4xl flex items-center gap-3 ">
+        <h2 className="text-4xl flex items-center gap-3 text-primary">
           <IoIosSearch className="inline" />
           Search College Name
         </h2>
@@ -48,7 +48,10 @@ const Home = () => {
 
       <div className="bg-primary text-white py-20">
         <div className="space-lg wrapper ">
-          <Title title={"Highlighted Student Research Works"} />
+          <Title
+            className="!text-white"
+            title={"Highlighted Student Research Works"}
+          />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-10">
             {researchData.map((data, index) => (
               <div className="col-span-1 mx-auto space-md" key={index}>
