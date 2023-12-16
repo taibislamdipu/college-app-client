@@ -131,3 +131,59 @@ export const researchData = [
       "Exploring blockchain technology to enhance transparency and traceability in global supply chains.",
   },
 ];
+
+export const footerItems = [
+  {
+    title: "About",
+    items: [
+      "Mission",
+      "Leadership and Management",
+      "Pro Vice-Chancellor and Acting Vice-Chancellor",
+      "Affiliations",
+      "HR and Administrative Policies",
+      "Career at BracU",
+      "Office Of The Proctor",
+      "Brac University New Campus",
+    ],
+  },
+  {
+    title: "Academics",
+    items: [
+      "Institutes and Schools",
+      "Departments",
+      "Centres and Initiatives",
+      "Office of the Registrar",
+      "Fees and Payment",
+      "Programs",
+      "Policies and Procedures",
+      "Residential Campus",
+      "Institutional Quality Assurance Cell (IQAC)",
+      "Teaching and Research",
+      "Open Society University Network (OSUN)",
+    ],
+  },
+  {
+    title: "Resources",
+    items: [
+      "Ayesha Abed Library",
+      "Fabrication Laboratory",
+      "Publications",
+      "Resources for Media",
+      "Social Media",
+      "University Information Technology",
+    ],
+  },
+  {
+    title: "Campus Life",
+    items: [
+      "Counseling Unit",
+      "Dress Code",
+      "Medical Center",
+      "Office of Student Affairs (OSA)",
+      "Office of Career Services & Alumni Relations (OCSAR)",
+      "Office of Academic Advising (OAA)",
+      "Office of Co-curricular Activities (OCA)",
+      "International and Scholarship Office",
+    ],
+  },
+];
