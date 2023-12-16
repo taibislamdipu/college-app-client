@@ -1,6 +1,7 @@
 import GalleryCard from "../components/GalleryCard";
 import Search from "../components/Search";
 import CollegeCard from "../components/CollegeCard";
+import { collegeData } from "../../utils/constants";
 
 const Home = () => {
   return (
@@ -14,10 +15,10 @@ const Home = () => {
       <div className="testb">
         <h2>College Card</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((data, index) => (
-            <div className="mx-auto col-span-1" key={index}>
-              <CollegeCard />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10">
+          {collegeData.map((data) => (
+            <div className="col-span-1" key={data.id}>
+              <CollegeCard data={data} />
             </div>
           ))}
         </div>
